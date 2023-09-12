@@ -150,7 +150,6 @@ h2 {
 .footer {
     color: var(--white);
     background-color: var(--navyblue);
-    height: 312px;
     flex-shrink: 0;
 }
 
@@ -218,7 +217,7 @@ h2 {
 .filters-button:focus,
 .filters-button:hover {
     color: var(--white);
-    background-color: var(--iris);
+    background-color: var(--ocean);
     border-color: var(--ocean);
 }
 
@@ -284,6 +283,11 @@ h2 {
     padding: 12px 24px;
 }
 
+.filters {
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+
 .hero-button {
     color: var(--white);
     background-color: var(--iris);
@@ -320,12 +324,6 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding-top: 96px;
-    padding-bottom: 72px;
-}
-
-.apps-container {
-    padding-bottom: 120px;
 }
 
 .apps-list {
@@ -336,6 +334,9 @@ h2 {
     justify-content: center;
 }
 
+.apps {
+    padding-bottom: 120px;
+}
 
 .app-name {
     color: var(--navyblue);
@@ -368,6 +369,10 @@ h2 {
     padding: 101.5px 0px;
 }
 
+.social-media {
+    display: block;
+}
+
 
 .features-image {
     background-color: var(--cloud);
@@ -392,7 +397,6 @@ h2 {
 .team-icon-link {
     display: flex;
     column-gap: 24px;
-    width: 40px;
     height: 40px;
     align-items: center;
     margin-top: 16px;
@@ -510,6 +514,8 @@ h2 {
 .apps-figure {
     width: 100%;
     height: 300px;
+    position: relative;
+    overflow: hidden;
 }
 
 .apps-figure img {
@@ -524,4 +530,25 @@ h2 {
     position: absolute;
     top: 0px;
     left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris);
+    padding: 0px 24px;
+    color: var(--white);
+    text-align: left;
+    align-items: center;
+    display: flex;
+    transition: transform 1s;
+    transform: translateY(100%);
 }
+ .apps-list-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+ }
+ .apps-list-item:hover figcaption {
+    transform: translateY(0);
+ }
+
+ .apps-list-item {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 1s;
+ }
