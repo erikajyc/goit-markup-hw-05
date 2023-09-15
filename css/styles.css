@@ -198,6 +198,7 @@ h2 {
     text-decoration: none;
     line-height: 24px;
     letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -283,6 +284,10 @@ h2 {
     background: var(--cloud);
     cursor:pointer;
     padding: 12px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .filters {
@@ -304,6 +309,7 @@ h2 {
     border: unset;
     outline: none;
     padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list-item:active,
@@ -394,6 +400,7 @@ h2 {
     height: 40px;
     background-color: var(--iris);
     border-radius: 22px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link {
@@ -454,6 +461,7 @@ h2 {
     padding: 16px 32px;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-list-item:hover {
@@ -467,12 +475,14 @@ h2 {
 
 .customer-list-item-link {
     color: var(--light-slate);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-svg {
     width: 94px;
     height: 56px;
     fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
@@ -490,11 +500,13 @@ h2 {
 
 .nav-list-item {
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item:hover .header-nav-links::after {
     width: 100%;
     color: var(--ocean);
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item:hover .header-nav-links,
@@ -576,7 +588,7 @@ h2 {
     left: 0px;
     opacity: 1;
     transition-property: visibility, opacity;
-    transition-duration: var(--transition-duration);
+    transition-duration: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .modal-content {
@@ -587,8 +599,9 @@ h2 {
     background-color: var(--dairy);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transform: none;
-    transition: transform var(--transition-duration);
+    transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
  }
+
 
  .modal-close {
     display: flex;
@@ -607,6 +620,21 @@ h2 {
     left: 90%;
     top: 0%;
     cursor: pointer;
+    color: var(--navyblue);
+    transition: background-color var(--transition-duration) 250ms color var(--transition-duration) 250ms;
+ }
+
+ .modal-close svg {
+    width: 8px;
+    height: 8px;
+    fill: var(--navyblue);
+    transition: fill var(--transition-duration) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .modal-close:hover {
+    background: var(--ocean);
+    border-color: var(--ocean);
+    stroke: var(--cloud);
  }
 
  .modal.is-hidden {
