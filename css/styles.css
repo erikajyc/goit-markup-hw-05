@@ -637,6 +637,7 @@ h2 {
     height: 8px;
     fill: var(--navyblue);
     transition: fill var(--transition-duration) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
  }
 
  .modal-close:hover {
@@ -654,3 +655,38 @@ h2 {
  .modal.is-hidden .modal-content {
     transform: scale(0.5);
  }
+
+ .modal-content {
+    padding: 40px;
+ }
+
+ .user-contact {
+    padding-top: 16px;
+ }
+
+ .user-contact-heading {
+    margin-top: 32px;
+    margin-bottom: 0px;
+ }
+
+ .user-contact label {
+    display: block;
+    margin-top: 8px;
+ }
+
+ .user-contact input {
+    display: block ;
+    width: 100%;
+ }
+
+ label.user-contact-checkbox {
+    display: flex;
+ }
+
+ .user-contact-checkbox input {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+ }
+
+ 
